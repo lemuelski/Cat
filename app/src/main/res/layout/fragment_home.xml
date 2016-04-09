@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_option_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-250dp"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ll_option_layout_holder"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-5dp"
+            android:background="@color/colorPrimary"
+            android:padding="4dp" />
+
+        <ImageView
+            android:id="@+id/iv_optionTrigger"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/btn_icon_option_trigger" />
+
+    </LinearLayout>
+
+</RelativeLayout>
